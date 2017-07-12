@@ -3,9 +3,10 @@
  */
 public class PlayerRock extends Player {
 
-    public PlayerRock(String name) {
+    public PlayerRock(String name, int wins) {
         this.setPlayerPick(Roshambo.ROCK);
         this.setName(name);
+        this.setTotalWins(wins);
     }
 
     @Override

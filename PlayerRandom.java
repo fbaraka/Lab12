@@ -6,9 +6,10 @@ import java.util.Random;
 public class PlayerRandom extends Player {
 
     //below is the constructor...because it is the same name as the class including the uppercase letters
-    public PlayerRandom(String name) {
+    public PlayerRandom(String name, int wins) {
         this.setPlayerPick(generateRandomRashambo());
         this.setName(name);
+        this.setTotalWins(wins);
     }
 
     @Override

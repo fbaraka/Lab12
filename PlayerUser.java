@@ -5,12 +5,11 @@ import java.util.Scanner;
  */
 public class PlayerUser extends Player {
 
-    public PlayerUser(String name, String input) {
+    public PlayerUser(String name, String input, int wins) {
         this.setPlayerPick(generateRoshambo(input));
         this.setName(name);
+        this.setTotalWins(wins);
     }
-
-
 
     @Override
     public Roshambo generateRoshambo(String userChoice) {
