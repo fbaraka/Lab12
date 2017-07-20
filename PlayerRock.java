@@ -9,6 +9,10 @@ public class PlayerRock extends Player {
         this.setTotalWins(wins);
     }
 
+    public PlayerRock() {
+
+    }
+
     @Override
     public Roshambo generateRoshambo(String userChoice) {
         return Roshambo.ROCK;

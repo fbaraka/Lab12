@@ -19,8 +19,8 @@ public class RoshamboApp {
         System.out.println("Would you like to play against Jets or Sharks?");
 
 
-        Player opponent = chooseOpponent(scan); // method that creates the opponent player based on the user string input
-
+        //Player opponent = chooseOpponent(scan); // method that creates the opponent player based on the user string input
+        Player opponent = OpponentFactory.getInstance(scan.nextLine());
 
         System.out.println("So....ROCK, PAPER, or SCISSORS???");
         String userPick = scan.nextLine();
@@ -28,9 +28,8 @@ public class RoshamboApp {
         PlayerUser humanPlayer = new PlayerUser(userName, userPick, 0);
 
 
-
-
         String userContinue = "y";
+
         while (userContinue.equalsIgnoreCase("y")) {
             System.out.println("You chose " + humanPlayer.getPlayerPick());
             System.out.println(opponent.getName() + " chose " + opponent.getPlayerPick());

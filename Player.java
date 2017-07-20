@@ -13,16 +13,20 @@ public abstract class Player {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;}
+
+
+
     public Roshambo getPlayerPick() {
         return playerPick;
     }
 
 
-    public void setName(String name) {
-        this.name = name;}
-
     public void setPlayerPick(Roshambo pick) {
         this.playerPick = pick;}
+
+
 
     public int getTotalWins() {
         return totalWins;

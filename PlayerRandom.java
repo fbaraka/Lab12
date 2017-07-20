@@ -12,6 +12,10 @@ public class PlayerRandom extends Player {
         this.setTotalWins(wins);
     }
 
+    public PlayerRandom() {
+
+    }
+
     @Override
     public Roshambo generateRoshambo(String userChoice) {
         return generateRandomRashambo();
